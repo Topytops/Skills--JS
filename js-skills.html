@@ -158,6 +158,15 @@
 
 <script>
   // code here for above problem
+  var formButton = document.getElementById("prevent-form-submission-form");
+
+  function preventForm(evt) {
+    alert("I will not submit");
+    evt.preventDefault();
+  }
+
+
+  formButton.addEventListener('submit', preventForm);
 </script>
 
 <div class="hint">
