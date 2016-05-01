@@ -121,6 +121,14 @@
 
 <script>
   // code here for above-problem
+  var changeButton = document.getElementById("change-hello-to-goodbye-button");
+
+ var textChangeTo = document.getElementById("message-to-change");
+
+ function changeText(evt) {
+  textChangeTo.innerText = "Goodbye"
+ };
+ changeButton.addEventListener('click', changeText);
 </script>
 
 <div class="hint">
