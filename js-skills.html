@@ -269,7 +269,15 @@ $(".tricky-to-find").on('click', showMessage);
 </fieldset>
 
 <script>
-  // put your code here
+  // put your code here 
+  var animalPicture = $("#kittenz-rule");
+
+  function changeImage(evt) {
+    animalPicture.attr('src','https://img1.etsystatic.com/057/0/8152720/il_214x170.751265897_6e9q.jpg');
+    
+  }
+  animalPicture.on('dbclick', changeImage);
+
 </script>
 
 <div class="hint">
@@ -303,6 +311,14 @@ $(".tricky-to-find").on('click', showMessage);
 
 <script>
   // put your code here
+  $("#make-a-porcupine").on('click', function() {
+      setTimeout(function() {
+        $("#cute-porcupine-image").fadeIn('slow');
+        }, 1000)
+
+      });
+
+
 </script>
 
 <div class="hint">
